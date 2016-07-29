@@ -6,14 +6,14 @@
 <body>
 	<h1>Formulario de contacto</h1>
 
-	<form>
+	<form action="" method="POST" id="form1">
 		<table>
 			<tr>
 				<td>
 					<label>Nombres</label>
 				</td>
 				<td>
-					<input title="Se necesita un nombre" type="text" name="nombre" required/>
+					<input title="Se necesita un nombre" type="text" placeholder="nombre" name="nombre" required/>
 				</td>
 			</tr>
 			<tr>
@@ -21,7 +21,15 @@
 					<label>Email</label>
 				</td>
 				<td>
-					<input type="email" name="email" required/>
+					<input type="email" placeholder="name@example.com" name="email" required/>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<button type="reset" value="reset">Reset</button>
+				</td>
+				<td>
+					<button type="submit" form="form1" value="Submit">Submit</button>
 				</td>
 			</tr>
 		</table>
